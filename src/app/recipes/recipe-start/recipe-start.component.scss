@@ -1,0 +1,53 @@
+hr {
+  color: #888888;
+  font-weight: 400;
+  text-align: left;
+  width: 50px;
+  height: 3px;
+  background: #749c07;
+  margin-left: 0;
+}
+
+#biggerHr {
+  color: #888888;
+  font-weight: 400;
+  text-align: left;
+  width: 50px;
+  height: 4px;
+  background: #c97f30;
+  margin-top: 0;
+  margin-left: 0;
+}
+
+#lastRecipeAdded {
+  text-align: left;
+  font-family: "Merriweather", "Times New Roman", Times, serif;
+  font-weight: 700;
+  color: #2d2e2e;
+  font-size: 38px;
+  margin-top: 20px;
+  margin-bottom: 40px;
+}
+
+#orangeButton {
+  background-color: #c97f30 !important;
+  border-color: #c97f30 !important;
+  border-radius: 0;
+  font-family: "Open Sans", Helvetica, Arial, sans-serif;
+  font-weight: 700;
+  text-align: center;
+  color: #fff;
+  border: 1px solid transparent;
+}
+
+
+#greenButton {
+    background-color: #199e3d !important;
+    border-color: #199e3d !important;
+    border-radius: 0;
+    font-family: "Open Sans", Helvetica, Arial, sans-serif;
+    font-weight: 700;
+    text-align: center;
+    color: #fff;
+    border: 1px solid transparent;
+  }

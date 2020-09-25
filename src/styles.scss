@@ -1,0 +1,91 @@
+/* You can add global styles to this file, and also import other style files */
+
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+
+h1 {
+  text-align: left;
+  font-family: "Merriweather", "Times New Roman", Times, serif;
+  font-weight: 700;
+  color: #2d2e2e;
+  font-size: 35px;
+  margin-top: 20px;
+}
+
+h2 {
+  margin-top: 13px;
+  color: #ef800d;
+  font-family: "Merriweather", "Times New Roman", Times, serif;
+  font-size: 18px;
+  text-align: center;
+}
+
+h3 {
+  text-align: left;
+  font-family: "Merriweather", "Times New Roman", Times, serif;
+  font-weight: 700;
+  color: #2d2e2e;
+  line-height: 1.22222;
+  font-size: 18px;
+}
+
+p {
+  font-family: "Open Sans", Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  line-height: 1.57143;
+  color: #888888;
+  font-weight: 400;
+  text-align: left;
+}
+
+
+button {
+  font-family: "Open Sans", Helvetica, Arial, sans-serif !important;
+  text-decoration: none !important;
+  font-weight: 700 !important;
+  text-align: center !important;
+  vertical-align: middle !important;
+  cursor: pointer !important;
+  border: 1px solid transparent !important;
+  font-size: 16px !important;
+  line-height: 16px !important;
+  border-radius: 0 !important;
+  border-width: 3px !important;
+  color: #fff !important;
+
+  .red {
+    background-color: #b03340 !important;
+    border-color: #b03340 !important;
+  }
+
+  .green {
+    background-color: #199e3d !important;
+    border-color: #199e3d !important;
+  }
+
+  .orange {
+    background-color: #c97f30 !important;
+    border-color: #c97f30 !important;
+  }
+}
+
+a {
+
+  &:link,
+  &:visited,
+  &:active {
+    background-color: white !important;
+    text-decoration: none;
+    color: #888888;
+    border: none;
+    transition: .3s all ease;
+  }
+
+  h2 {
+    transition: .3s all ease;
+
+    &:hover {
+      color: #199e3d;
+    }
+  }
+}

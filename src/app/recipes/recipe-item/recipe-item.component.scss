@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+
+#recipe-item-wrapper {
+  -webkit-tap-highlight-color: transparent;
+  font-family: "Open Sans", Helvetica, Arial, sans-serif;
+  font-weight: 400;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-top: 0;
+  max-width: 100%;
+  background-color: transparent;
+
+  a {
+    &:link, &:hover, &:visited, &:active {
+        background-color: white !important;
+        text-decoration: none;
+        color: #888888;
+        border: none;
+    }
+
+    h4 {
+        margin-top: 13px;
+        color: #ef800d;
+        font-family: "Merriweather", "Times New Roman", Times, serif;
+        font-size: 19px;
+        text-align: left;
+    }
+
+    p {
+        font-family: "Open Sans", Helvetica, Arial, sans-serif;
+        font-size: 13px;
+        line-height: 1.57143;
+        color: #888888;
+        text-align: left;
+    }
+}
+
+}

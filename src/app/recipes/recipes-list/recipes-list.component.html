@@ -1,0 +1,13 @@
+<div class="row">
+    <div class="col-xs-12">
+        <button class="btn btn-success" id="orangeButton" (click)="onAddNewRecipe()">Add recipe</button>
+    </div>
+</div>
+<br>
+<div class="row">
+    <div class="col-xs-12">
+        <div style="height: 90vh; overflow-y: scroll;">
+            <app-recipe-item *ngFor="let element of recipes.slice().reverse(); let i = index" [recipe]="element" [index]="i"></app-recipe-item>
+        </div>
+    </div>
+</div>

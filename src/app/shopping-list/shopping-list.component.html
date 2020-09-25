@@ -1,0 +1,35 @@
+<div class="row">
+    <div class="col-sm-12">
+        <button class="btn btn-primary" id="orangeButton" routerLink="/recipes" >
+            Go to recipes
+        </button>
+    </div>
+</div>
+<div class="row">
+    <div class="col-sm-12 col-md-6">
+        <h2>Groceries to buy:</h2>
+        <hr>
+        <div style="max-height: 85vh; overflow-y: scroll;" *ngIf="ingredients.length > 0; else lackOfIngredients">
+            <div style="max-width: 89vw;">
+                <ul class="list-group">
+                    <a class="list-group-item" style="cursor: pointer;"
+                        *ngFor="let ingredient of ingredients; let i = index" (click)="onEditIngredient(i)" id="slWrapper">
+                        {{ingredient.name}} ({{ingredient.amount}})
+                    </a>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="col-sm-12 col-md-6">
+        <h2>You can always add your ones:</h2>
+        <hr>
+        <app-shopping-list-edit></app-shopping-list-edit>
+    </div>
+</div>
+
+<ng-template #lackOfIngredients>
+    <div id="slWrapper">
+        <h3>For now, your shopping list is empty.</h3>
+        <h3>Add them yourself, or ... look at the recipes we offer you?</h3>
+    </div>
+</ng-template>

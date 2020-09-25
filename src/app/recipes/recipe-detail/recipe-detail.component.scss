@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300&display=swap');
+
+hr {
+  color: #888888;
+  font-weight: 400;
+  text-align: left;
+  width: 50px;
+  height: 3px;
+  background: #749c07;
+  margin-left: 0;
+}
+
+div {
+  .text-subline {
+    text-align: left;
+    position: relative;
+    height: 2px;
+    background: #c97f30;
+    border: none;
+    width: 50px;
+    margin-bottom: 15px;
+  }
+}
+
+h1 {
+  text-align: left;
+  font-family: "Merriweather", "Times New Roman", Times, serif;
+  font-weight: 700;
+  color: #2d2e2e;
+  font-size: 35px;
+  margin-top: 20px;
+}
+
+h3 {
+  text-align: left;
+  font-family: "Merriweather", "Times New Roman", Times, serif;
+  font-weight: 700;
+  color: #2d2e2e;
+  line-height: 1.22222;
+  font-size: 18px;
+  margin-top: 20px;
+}
+
+#orangeButton {
+  background-color: #c97f30 !important;
+  border-color: #c97f30 !important;
+  border-radius: 0;
+  font-family: "Open Sans", Helvetica, Arial, sans-serif;
+  font-weight: 700;
+  text-align: center;
+  color: #fff;
+  border: 1px solid transparent;
+}
+
+#greenButton {
+  border-radius: 0;
+  font-family: "Open Sans", Helvetica, Arial, sans-serif;
+  font-weight: 700;
+  text-align: center;
+  color: #fff;
+  background-color: #199e3d;
+  border: 1px solid transparent;
+  border-color: #199e3d;
+}
+
+
+#dropdown-button-wrapper {
+  /* button {
+    border-radius: 0;
+    font-family: "Open Sans", Helvetica, Arial, sans-serif;
+    font-weight: 700;
+    text-align: center;
+    color: #fff;
+    background-color: #199e3d;
+    border: 1px solid transparent;
+    border-color: #199e3d;
+  }
+  */
+
+  a {
+    .dropdown-item {
+      font-family: "Open Sans", Helvetica, Arial, sans-serif;
+      font-weight: 700;
+      text-align: center;
+      color: #fff;
+    }
+  }
+}
+
+/* #divBottom {
+  margin: 0 !important;
+  padding: 0 !important;
+}
+*/

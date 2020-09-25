@@ -1,0 +1,61 @@
+<div class="row">
+    <div class="col-12 col-md-6">
+        <div class="text-left">
+            <button class="btn btn-primary" id="orangeButton" routerLink="/shopping-list">Go to your shopping list</button>
+        </div>
+    </div>
+    <div class="col-12 col-md-6">
+        <div id="dropdown-button-wrapper" class="text-right">
+            <div class="dropdown">
+                <button class="btn btn-primary dropdown-toggle red" type="button" id="greenButton"
+                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Manage this recipe
+                </button>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                    <a class="dropdown-item" style="cursor: pointer;" (click)="onAddToShoppingList()">Add to the
+                        shopping
+                        list</a>
+                    <a class="dropdown-item" style="cursor: pointer;" (click)="onEditRecipe()">Edit recipe</a>
+                    <a class="dropdown-item" style="cursor: pointer;" (click)="onDelete()">Delete recipe</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="row">
+    <div class="col-sm-12">
+        <h1 id="recipeName">{{recipe.name}}</h1>
+        <hr>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-xs-12">
+            <div style="height: 80vh;" class="overflow-auto">
+                <div style="width: 95%">
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <img [src]="recipe.imageUrl" class="img-fluid">
+                        </div>
+                        <div class="col-sm-6">
+                            <h3 class="text-justify" style="margin-top: 0;">{{recipe.description}}</h3>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <h3>Ingredients</h3>
+                            <div class="text-subline"></div>
+                            <p *ngFor="let ingredient of recipe.ingredients">{{ingredient.name}} - {{ingredient.amount}}</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <h3>Directions</h3>
+                            <div class="text-subline"></div>
+                            <p>{{recipe.method}}</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </div>
+</div>

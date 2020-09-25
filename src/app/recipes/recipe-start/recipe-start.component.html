@@ -1,0 +1,28 @@
+<div class="row">
+    <div class="col-sm-12">
+                <div class="text-left">
+                    <button class="btn btn-primary" id="orangeButton" routerLink="/shopping-list">Go to your shopping list</button>
+                </div>
+    </div>
+    <div class="col-sm-12">
+        <p id="lastRecipeAdded">
+            Last recipe added:
+        </p>
+    </div>
+</div>
+<div class="row">
+    <div class="col-sm-6">
+        <h1 id="recipeName">{{recipe.name}}</h1>
+        <hr>
+        <p class="text-justify">{{recipe.description}}</p>
+    </div>
+    <div class="col-sm-6">
+        <img [src]="recipe.imageUrl" class="img-fluid">
+    </div>
+</div>
+<br>
+<div class="row">
+    <div class="col-sm-12">
+        <button class="btn btn-primary" id="greenButton" [routerLink]="['/recipes', lastRecipeNumber]">Go to this recipe <span>&#8594;</span></button>
+    </div>
+</div>
